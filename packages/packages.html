@@ -6,33 +6,31 @@
 <title>Our Packages</title>
 
 <style>
-  h1{
-  animation: zoomIn 1s ease;
-}
 
-@keyframes zoomIn{
-  from{
-    opacity:0;
-    transform:scale(0.8);
-  }
-  to{
-    opacity:1;
-    transform:scale(1);
-  }
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-
-*{box-sizing:border-box}
 
 body{
-  margin:0;
   font-family:Arial, sans-serif;
   color:#ffffff;
-  background: url("bg2.jpg") no-repeat center center fixed;
+  background-image: url("bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  padding:100px 20px 40px;
+}
 
-
-  /* 🔥 MAIN FIX */
-  padding:100px 20px 20px;
+/* 🔥 MOBILE BACKGROUND FIX */
+@media(max-width:768px){
+  body{
+    background-attachment: scroll; /* fixed eka mobile wala bug wenawa */
+    background-size: cover;
+    padding-top:80px;
+  }
 }
 
 /* HOME BUTTON */
@@ -47,6 +45,11 @@ body{
   font-weight:bold;
   border-radius:30px;
   z-index:999;
+  transition:0.3s;
+}
+
+.home-btn:hover{
+  background:#ffb703;
 }
 
 /* PACKAGES */
@@ -56,9 +59,23 @@ body{
   text-align:center;
 }
 
+/* ANIMATION */
 h1{
   margin-bottom:30px;
-  font-size:32px;
+  font-family:'Anton', serif;
+  font-size:60px;
+  animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn{
+  from{
+    opacity:0;
+    transform:scale(0.8);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
 }
 
 .package-grid{
@@ -88,7 +105,7 @@ h1{
 }
 
 .package-card h3{
-  margin-top:0;
+  margin-bottom:10px;
   font-size:20px;
 }
 
@@ -115,13 +132,13 @@ h1{
 
 /* WHITE CARD */
 .white-card{
-  background:#e7e3e3;
-  color:#000;
+  background:linear-gradient(135deg,#0da29b,#021541);
+  color:#ffffff;
 }
-.white-card p{color:#333}
+
 .white-card span{
   background:#0b1d2a;
-  color:#fff;
+  color:#ffffff;
 }
 
 /* NOTE */
@@ -134,11 +151,13 @@ h1{
 
 /* MOBILE */
 @media(max-width:480px){
-  h1{font-size:26px}
-  .package-card{padding:20px}
 
-  body{
-    padding-top:66px; /* mobile extra safety */
+  h1{
+    font-size:32px;
+  }
+
+  .package-card{
+    padding:18px;
   }
 
   .home-btn{
@@ -157,68 +176,64 @@ h1{
 <a href="../index.html" class="home-btn">HOME</a>
 
 <section class="packages">
- <h1 style="font-family: 'Anton',serif; font-size: 65px;"><u>
 
- Our Travel Packages</u></h1> <br><h4>🍲For every tour package booked with us, we provide a complimentary <span style="color:#d5a319">breakfast</span> on the day the tour begins.</h4>
+<h1><u>Our Travel Packages</u></h1>
 
-  <div class="package-grid">
+<h4 style="margin-bottom:30px;">
+🍲 For every tour package booked with us, we provide a complimentary 
+<span style="color:#d5a319">breakfast</span> on the day the tour begins.
+</h4>
 
-    <a href="1day tour/1 day.html" class="package-link">
-      <div class="package-card custom-card">
-        <h3>1-DAY TOUR</h3>
-        <p>Explore Sri Lanka in one unforgettable day with our guided experiences.</p>
-        <span>View Package</span>
-      </div>
-    </a>
+<div class="package-grid">
 
-    <a href="2day tour/2 day.html" class="package-link">
-      <div class="package-card custom-card">
-        <h3>2-DAY TOUR</h3>
-        <p>Perfect for short stays with cultural and scenic highlights.</p>
-        <span>View Package</span>
-      </div>
-    </a>
+<a href="../booking.html" class="package-link">
+<div class="package-card white-card">
+<h3>CUSTOMIZE YOUR TOUR</h3>
+<p>Create your own journey. Our team will contact you via WhatsApp.</p>
+<span>Customize</span>
+</div>
+</a>
 
-    <a href="3day tour/3 day.html" class="package-link">
-      <div class="package-card custom-card">
-        <h3>3-DAY TOUR</h3>
-        <p>A balanced trip covering nature, culture and relaxation.</p>
-        <span>View Package</span>
-      </div>
-    </a>
+<a href="1day tour/1 day.html" class="package-link">
+<div class="package-card custom-card">
+<h3>1-DAY TOUR</h3>
+<p>Explore Sri Lanka in one unforgettable day with our guided experiences.</p>
+<span>View Package</span>
+</div>
+</a>
 
-    <a href="5day tour/5 day.html" class="package-link">
-      <div class="package-card custom-card">
-        <h3>5-DAY TOUR</h3>
-        <p>Experience Sri Lanka deeply with hand-picked destinations.</p>
-        <span>View Package</span>
-      </div>
-    </a>
+<a href="2day tour/2 day.html" class="package-link">
+<div class="package-card custom-card">
+<h3>2-DAY TOUR</h3>
+<p>Perfect for short stays with cultural and scenic highlights.</p>
+<span>View Package</span>
+</div>
+</a>
 
-    <a href="10day tour/10 day.html" class="package-link">
-      <div class="package-card custom-card">
-        <h3>10-DAY TOUR</h3>
-        <p>The ultimate Sri Lanka tour covering all major attractions.</p>
-        <span>View Package</span>
-      </div>
-    </a>
+<a href="3day tour/3 day.html" class="package-link">
+<div class="package-card custom-card">
+<h3>3-DAY TOUR</h3>
+<p>A balanced trip covering nature, culture and relaxation.</p>
+<span>View Package</span>
+</div>
+</a>
 
-    <a href="../booking.html" class="package-link">
-      <div class="package-card white-card">
-        <h3>CUSTOMIZE YOUR TOUR</h3>
-        <p>Create your own journey. Our team will contact you via WhatsApp.</p>
-        <span>Customize</span>
-      </div>
-    </a>
+<a href="5day tour/5 day.html" class="package-link">
+<div class="package-card custom-card">
+<h3>5-DAY TOUR</h3>
+<p>Experience Sri Lanka deeply with hand-picked destinations.</p>
+<span>View Package</span>
+</div>
+</a>
 
-  </div>
+</div>
 </section>
 
 <div class="note">
-  <h3>
-  Select one of these packages and confirm it. We will contact you via 
-    <span style="color:#25D366">WhatsApp</span>
-  </h3>
+<h3>
+Select one of these packages and confirm it. We will contact you via 
+<span style="color:#25D366">WhatsApp</span>
+</h3>
 </div>
 
 </body>
