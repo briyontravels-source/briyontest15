@@ -303,7 +303,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="gall fort.jpg">
+        <img src="templeofthooth.jpg">
         <div class="text">
           <h3>Main Destination</h3>
           <p>Nuwara temple of tooth </p>
@@ -313,7 +313,7 @@ body::before{
 
     <div class="sub light">
       <div class="sub-box reverse">
-        <img src="road.jpg">
+        <img src="roads.jpg">
         <div class="text">
           <h3>Journey Route</h3>
           <p>The roads are well maintained, allowing you to travel comfortably in our air-conditioned vehicle.</p>
@@ -323,7 +323,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="safaryandkesbo.jpg">
+        <img src="pandb.jpg">
         <div class="text">
           <h3>Stop Places</h3>
           <ul>
@@ -336,7 +336,7 @@ body::before{
 
     <div class="sub light">
       <div class="sub-box reverse">
-        <img src="cafee.jpg">
+        <img src="rest.jpg">
         <div class="text">
           <h3>Food & Activities</h3>
           <p>“Accompanied by our professional guide, guests may stop at selected locations like these for meals, refreshments, and relaxation breaks throughout the tour. These are provided as examples only.”</p>
@@ -346,7 +346,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="hotel.jpg">
+        <img src="final.jpg">
         <div class="text">
           <h3>Final Experience</h3>
           <ul>
@@ -367,7 +367,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="gall fort.jpg">
+        <img src="adamandyala.jpg">
         <div class="text">
           <h3>Main Destination</h3>
           <p><B>1st day:-</B>yala safari,ella and little adam's peak</p><br>
@@ -388,7 +388,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="safaryandkesbo.jpg">
+        <img src="ellanine.jpg">
         <div class="text">
           <h3>Stop Places</h3>
           <ul>
@@ -401,7 +401,7 @@ body::before{
 
     <div class="sub light">
       <div class="sub-box reverse">
-        <img src="cafee.jpg">
+        <img src="caffee2.jpg">
         <div class="text">
           <h3>Food & Activities</h3>
           <p>“Accompanied by our professional guide, guests may stop at selected locations like these for meals, refreshments, and relaxation breaks throughout the tour. These are provided as examples only.”</p>
@@ -411,7 +411,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="hotel.jpg">
+        <img src="hotel3.jpg">
         <div class="text">
           <h3>Final Experience</h3>
           <p>Guests will be safely dropped off at either our reserved hotel or their preferred hotel.</p>
@@ -426,7 +426,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="gall fort.jpg">
+        <img src="88.jpg">
         <div class="text">
           <h3>Main Destination</h3>
           <p><B>1st day:-</B>Dabulla and Sigiriya</p>
@@ -447,7 +447,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="safaryandkesbo.jpg">
+        <img src="8.jpg">
         <div class="text">
           <h3>Stop Places</h3>
        <P>“Our main sightseeing locations include the Atamasthana—eight sacred places of immense ancient and historical value in Sri Lanka.”</P>
@@ -457,7 +457,7 @@ body::before{
 
     <div class="sub light">
       <div class="sub-box reverse">
-        <img src="cafee.jpg">
+        <img src="caffe4.jpg">
         <div class="text">
           <h3>Food & Activities</h3>
          <P>“Accompanied by our professional guide, guests may stop at selected locations like these for meals, refreshments, and relaxation breaks throughout the tour. These are provided as examples only.”</P>
@@ -467,7 +467,7 @@ body::before{
 
     <div class="sub">
       <div class="sub-box">
-        <img src="hotel.jpg">
+        <img src="hotel4.jpg">
         <div class="text">
           <h3>Final Experience</h3>
           <p>Guests will be safely dropped off at either our reserved hotel or their preferred hotel.</p>
@@ -477,6 +477,31 @@ body::before{
   </details>
 
 </section>
+<script>
+  const accordions = document.querySelectorAll(".accordion");
 
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("toggle", function () {
+      if (this.open) {
+
+        // Close other accordions
+        accordions.forEach((item) => {
+          if (item !== this) {
+            item.removeAttribute("open");
+          }
+        });
+
+        // Scroll to top of opened accordion
+        setTimeout(() => {
+          this.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 200);
+
+      }
+    });
+  });
+</script>
 </body>
 </html>

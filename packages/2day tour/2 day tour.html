@@ -134,10 +134,10 @@ document.getElementById("package").value=params.get("package")||"";
 
 // map days to tour
 function getPackageName(no){
-  if(no==1)return "Galle Fort";
-  if(no==2)return "Bentota Beach";
-  if(no==3)return "Sigiriya Rock";
-  if(no==4)return "Ella & Tea Plantations";
+  if(no==1)return "ANURADHAPURA & POLONNARUWA";
+  if(no==2)return "NUWARA,PINNAWALA & PERADENIYA BOTNICAL GARDENS";
+  if(no==3)return "YALA SAFARI,ELLA,LITTLE ADAM'S PEAK AND UDAWALAWA SAFARI";
+  if(no==4)return "SIGIRIYA,DABULLA AND POLONNARUWA";
   return "";
 }
 
@@ -160,7 +160,7 @@ function sendWhatsApp(){
 
   const message=
 `📢 New Booking Request
-2️⃣ day tour
+ 2 day tour
 📦 Package: ${pkg}
 🗺 Tour: ${tour}
 📅 number: ${days}

@@ -88,14 +88,14 @@ h3{
 
 <body>
 
-<a href="5 day.html" class="back-btn">BACK</a>
+<a href="7 day.html" class="back-btn">BACK</a>
 
 <div class="container">
 <h2>Book Your Package</h2>
 
 <form onsubmit="sendWhatsApp();return false;">
 
-<input type="text" id="package" placeholder="five day tour" readonly>
+<input type="text" id="package" placeholder="seven day tour" readonly>
 
 <!-- DAYS SELECT -->
 <select id="no_of_package" onchange="updateTour()" required>
@@ -134,10 +134,10 @@ document.getElementById("package").value=params.get("package")||"";
 
 // map days to tour
 function getPackageName(no){
-  if(no==1)return "South Coast + Hill Country Mix (Relax + Scenic)";
-  if(no==2)return "Wildlife + Ancient Sri Lanka";
-  if(no==3)return "Luxury Coastal + Whale Watching";
-  if(no==4)return "Culture + Scenic Train Experience";
+  if(no==1)return "Galle Fort";
+  if(no==2)return "Bentota Beach";
+  if(no==3)return "Sigiriya Rock";
+  if(no==4)return "Ella & Tea Plantations";
   return "";
 }
 
@@ -160,7 +160,7 @@ function sendWhatsApp(){
 
   const message=
 `📢 New Booking Request
- 5 day tour
+ 7 day tour
 📦 Package: ${pkg}
 🗺 Tour: ${tour}
 📅 number: ${days}

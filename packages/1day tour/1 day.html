@@ -551,6 +551,31 @@ body::before{
   </details>
 
 </section>
+<script>
+  const accordions = document.querySelectorAll(".accordion");
 
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("toggle", function () {
+      if (this.open) {
+
+        // Close other accordions
+        accordions.forEach((item) => {
+          if (item !== this) {
+            item.removeAttribute("open");
+          }
+        });
+
+        // Scroll to top of opened accordion
+        setTimeout(() => {
+          this.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 200);
+
+      }
+    });
+  });
+</script>
 </body>
 </html>
