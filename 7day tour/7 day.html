@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>7 Day Tour Package | Briyon Travels</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
+}
+body{
+  position:relative;
+  color:#333;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url("../bg.jpg") no-repeat center center;
+  background-size:cover;
+  z-index:-1;
+  filter:brightness(0.85);
+}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:45vh;              /* reduced space */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:35px 20px 15px;
+}
+
+.hero-box{
+  background:#ffffff;
+  padding:30px 40px;            /* reduced padding */
+  border-radius:16px;
+  text-align:center;
+  animation:fadeUp 1.2s ease;
+  box-shadow:0 18px 40px rgba(0,0,0,0.15);
+}
+
+.hero-box h1{
+  font-size:42px;
+  color:#ff8c00;
+}
+
+.hero-box p{
+  margin-top:10px;
+  font-size:17px;
+  color:#444;
+}
+
+/* ================= BUTTON AREA ================= */
+.hero-nav{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  padding:25px 8%;
+  margin-top:px;              /* reduced space */
+  animation:fadeUp 1.5s ease;
+}
+
+.hero-nav a{
+  flex:1;
+  text-align:center;
+  padding:22px 0;
+  font-size:35px;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:40px;
+  transition:0.3s;
+}
+
+.btn-back{
+  background:#4b4b4b;
+  color:#fff;
+}
+
+.btn-back:hover{
+  background:#333;
+}
+
+.btn-next{
+  background:#ff9c00;
+  color:#000;
+}
+
+.btn-next:hover{
+  background:#ff8500;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-topic{
+  padding:60px 8%;
+}
+
+/* ================= ACCORDION ================= */
+.accordion{
+  background:#fff;
+  border-radius:14px;
+  margin-bottom:35px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.accordion summary{
+  padding:26px 30px;
+  font-size:26px;
+  font-weight:600;
+  cursor:pointer;
+  background:#f7f7f7;
+  list-style:none;
+}
+
+.accordion summary::marker{
+  display:none;
+}
+
+.accordion summary span{
+  color:#999;
+  margin-right:12px;
+}
+
+.accordion[open] summary{
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+/* ================= SUB SECTIONS ================= */
+.sub{
+  padding:60px 8%;
+}
+
+.sub.light{
+  background:#fafafa;
+}
+
+.sub-box{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  animation:fadeUp 1.2s ease;
+}
+
+.sub-box.reverse{
+  flex-direction:row-reverse;
+}
+
+.sub-box img{
+  width:50%;
+  border-radius:14px;
+  transition:0.4s;
+}
+
+.sub-box img:hover{
+  transform:scale(1.05);
+}
+
+.text h3{
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.text p, .text ul{
+  font-size:16px;
+  line-height:1.8;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(50px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+
+  .hero-box h1{
+    font-size:34px;
+  }
+
+  .hero-nav{
+    flex-direction:column;
+    gap:18px;
+    padding:20px 6%;
+  }
+
+  /*  MOBILE BUTTON SIZE INCREASE  */
+  .hero-nav a{
+    padding:22px 0;        /* taller buttons */
+    font-size:20px;        /* bigger text */
+    border-radius:50px;    /* smoother look */
+  }
+
+  .sub-box,
+  .sub-box.reverse{
+    flex-direction:column;
+  }
+
+  .sub-box img{
+    width:100%;
+  }
+
+  .accordion summary{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>7 Day Tour Packages</h1>
+    <p>Perfect five Day Experience in Sri Lanka</p>
+  </div>
+</section>
+
+
+<!-- BUTTONS -->
+<div class="hero-nav">
+  <a href="../packages.html" class="btn-back">← Back</a>
+  <a href="7 day tour.html" class="btn-next">Continue →</a>
+</div>
+
+<section class="main-topic">
+
+  <!-- TOPIC 1 -->
+  <details class="accordion">
+    <summary><span>01</span><B>CLASSIC SRI LANKA EXPLORER - (7 days/6 nights) </B><br><h5>details</h5></summary>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="negembo.jpg">
+        <div class="text">
+          <h3>Day 1 – Arrival & Relaxation in Negombo</h3>
+          <p>Upon arrival at Bandaranaike International Airport, you will be warmly welcomed by our representative and transferred to Negombo.
+<ul><b>
+<li>Check-in at beach hotel</li>
+<li> Evening beach relaxation</li>
+<li>Optional lagoon boat tour through mangroves</li>
+<li>Fresh seafood dinner experience</li></b>
+</ul>
+Overnight stay in Negombo.
+</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="kandy.jpg">
+        <div class="text">
+          <h3> Day 2 – Cultural Experience in Kandy</h3>
+          <p>After breakfast, proceed to Kandy, the cultural capital of Sri Lanka.
+<ul><b>
+<li>Visit the sacred Temple of the Sacred Tooth Relic</li>
+<li>Explore Kandy Lake</li>
+<li> Visit a spice garden en route</li>
+<li> Evening traditional Kandyan cultural dance performance</li></b>
+</ul>
+Overnight stay in Kandy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="nuwaraeli.jpg">
+        <div class="text">
+          <h3> Day 3 – Scenic Highlands of Nuwara Eliya</h3>
+       <p>
+        
+Travel through beautiful mountain roads covered with tea plantations and waterfalls.
+<ul><b>
+<li> Visit a working tea factory & tea tasting session</li>
+<li> Explore Gregory Lake</li>
+<li> Visit Hakgala Botanical Garden (optional)</li>
+<li> Experience cool-climate colonial town atmosphere</li></b>
+</ul>
+Overnight stay in Nuwara Eliya.
+ 
+       </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="ella.jpg">
+        <div class="text">
+          <h3>Day 4 – Adventure in Ella</h3>
+          <p>
+      Enjoy one of the most scenic train rides in the world (Nanu Oya to Ella – optional).
+<ul><b>
+<li> Visit the iconic Nine Arches Bridge</li>
+<li>Hike Little Adam’s Peak</li>
+<li>Enjoy panoramic mountain views</li>
+<li>Relax at a scenic café</li>
+</b></ul>
+
+Overnight stay in Ella.
+          </p>
+       </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="yala.jpg">
+        <div class="text">
+          <h3>Day 5 – Wildlife Safari in Yala</h3>
+         <p>
+          Proceed to Yala for an exciting wildlife experience.
+<ul><b>
+ <li>Afternoon Jeep Safari at Yala National Park</li>
+<li> Spot leopards, elephants, crocodiles & exotic birds</li>
+<li> Sunset wildlife photography</li>
+</ul></b>
+Overnight stay near Yala.
+         </p>
+        </div>
+      </div>
+    </div>
+
+        <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="mirissa.jpg">
+        <div class="text">
+          <h3>Day 6 – Beach Escape in Mirissa</h3>
+         <p>
+          Head to the southern coast for relaxation.
+<ul><b>
+ <li> Early morning whale watching tour (seasonal)</li>
+<li> Beach relaxation & swimming</li>
+<li> Optional surfing lessons</li>
+<li>Fresh seafood by the ocean</li>
+</ul></b>
+Overnight stay in Mirissa.
+         </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="sub">
+      <div class="sub-box">
+        <img src="galle.jpg">
+        <div class="text">
+          <h3> Day 7 – Heritage Visit in Galle → Departure</h3>
+         <p>
+          Before departure, explore the historic Dutch colonial city.
+<ul><b>
+ <li>Visit the UNESCO-listed Galle Fort</li>
+<li> Walk along ramparts with ocean views</li>
+<li> Explore boutique shops & cafés</li>
+</ul></b>
+
+Transfer to airport for departure with unforgettable memories.
+         </p>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </details>
+
+  <!-- TOPIC 2 -->
+  <details class="accordion">
+    <summary><span>02</span><b> ROMANTIC HONEYMOON TOUR - (7 days/6 nights)</b><br><h5>details</h5></summary>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="sigiriya.jpg">
+        <div class="text">
+          <h3>Day 1 – Sigiriya</h3>
+          <ul>
+            <li> Airport pickup</li>
+            <li> Luxury hotel check-in</li>
+            <li> Romantic dinner</li>
+<p>Begin your romantic journey with a luxury stay in Sigiriya surrounded by nature.Overnight stay in Sigiriya.</p>
+          </ul>
+         </div>
+      </div>
+    </div>
+
+    <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="R.jpg">
+        <div class="text">
+          <h3>Day 2 – Sigiriya Experience</h3>
+          <ul>
+            <li>Sigiriya Rock climb</li>
+            <li>Village tour</li>
+            <li>Spa session (optional)</li>
+          </ul>
+          <p>Climb the majestic Lion Rock and enjoy a private village experience together.Overnight stay in Sigiriya.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="rr.jpg">
+        <div class="text">
+          <h3>Day 3 – Kandy</h3>
+          <ul>
+            <li>Temple visit</li>
+            <li>Botanical garden walk</li>
+            <li>Cultural show</li>
+          </ul>
+          <p>Explore Kandy’s cultural beauty and enjoy a romantic evening walk by the lake.Overnight stay in Kandy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="rr3.png">
+        <div class="text">
+          <h3>Day 4 – Nuwara Eliya</h3>
+          <ul>
+            <li>Tea plantation visit</li>
+            <li>Gregory Lake</li>
+            <li>Scenic mountain drive</li>
+          </ul>
+          <p>Discover Sri Lanka’s tea country with cool weather and breathtaking scenery.Overnight stay in Nuwara Eliya.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <div class="sub-box">
+        <img src="br1.jpg">
+        <div class="text">
+          <h3>Day 5 – Bentota</h3>
+          <ul>
+            <li>Transfer to beach resort</li>
+            <li>Leisure time</li>
+          </ul>
+          <p>Relax in a luxury beach resort and enjoy ocean views.Overnight stay in Bentota.</p>
+        </div>
+      </div>
+    </div>
+
+        <div class="sub light">
+      <div class="sub-box reverse">
+        <img src="bns.jpg">
+        <div class="text">
+          <h3> Day 6 – Bentota Leisure</h3>
+          <ul>
+            <li>River safari</li>
+            <li>Couple spa treatment</li>
+            <li>Private beach dinner</li>
+          </ul>
+          <p>Spend quality time together with relaxing and romantic activities.Overnight stay in Bentota.</p>
+        </div>
+      </div>
+    </div>
+  
+            <div class="sub">
+      <div class="sub-box">
+        <img src="c.jpg">
+        <div class="text">
+          <h3>  Day 7 – Departure</h3>
+          <ul>
+            <li>Transfer to Colombo</li>
+            <li>Airport drop-off</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+
+</section>
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("toggle", function () {
+      if (this.open) {
+
+        // Close other accordions
+        accordions.forEach((item) => {
+          if (item !== this) {
+            item.removeAttribute("open");
+          }
+        });
+
+        // Scroll to top of opened accordion
+        setTimeout(() => {
+          this.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 200);
+
+      }
+    });
+  });
+</script>
+</body>
+</html>
